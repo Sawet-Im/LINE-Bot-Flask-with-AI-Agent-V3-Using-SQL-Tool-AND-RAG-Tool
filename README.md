@@ -40,14 +40,16 @@
 
 
 # 3. การติดตั้งและการตั้งค่า (Configuration)
-
-## 3.1. การติดตั้ง Dependencies
-
-นอกจากไลบรารีเดิมแล้ว ต้องติดตั้ง RAG Dependencies เพิ่มเติม:
+## 3.1. สิ่งที่ต้องมีก่อนเริ่ม
+ * Python 3.13
+ * pip (ตัวจัดการแพ็กเกจของ Python)
+ * ngrok (สำหรับเปิด Local Server ให้เข้าถึงได้จากภายนอก)
+## 3.2. การติดตั้ง Dependencies
 ```
+python3.13 -m venv venv
 pip install -r requirements.txt
 ```
-## 3.2. การตั้งค่า API Key
+## 3.3. การตั้งค่า API Key
 
 สร้างไฟล์ชื่อ .env และเพิ่มค่าที่จำเป็น รวมถึงตัวแปรใหม่สำหรับ RAG:
 ```
